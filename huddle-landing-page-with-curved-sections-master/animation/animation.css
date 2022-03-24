@@ -1,0 +1,23 @@
+.slideLeft{
+  transform: translateX(50%);
+}
+.slideRight{
+  transform: translateX(-50%);
+}
+.slideLeft, 
+.slideRight{
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+.slideLeft.appear, 
+.slideRight.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+.fade-in{
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
+}
