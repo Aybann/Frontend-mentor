@@ -1,0 +1,245 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.header-navigation{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 18px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 70px;
+  z-index: 2;
+}
+.header-navigation ul{
+  list-style: none;
+  display: flex;
+  gap: 3.5em;
+}
+.header-navigation ul li{
+  cursor: pointer;
+}
+.logo img{
+  width: 120px;
+}
+.header-section, .about-section{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100vh;
+}
+.header-container, .about-container{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0px 70px;
+}
+.header-description, .about-description{
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 32px;
+  gap: 1.5em;
+}
+.header-description h1, .about-description h2{
+  font-size: clamp(1.3rem, 3vw, 4rem);
+  color:  hsl(243, 87%, 12%);
+}
+.header-description p, .about-description p{
+  font-size: 1.2em;
+  color:hsl(243, 87%, 12%);
+}
+.header-description form{
+  display: flex;
+}
+.wrapper-email input[type = "email"]{
+  font-size: 16px;
+  width: 300px;
+  height: 3.2em;
+  padding: 0px 20px;
+  margin-right: 1em;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid hsl(243, 87%, 12%);
+}
+.wrapper-email input[type="submit"]{
+  font-size: 16px;
+  width: 200px;
+  height: 3.2em;
+  font-weight: 700;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.wrapper-email input[type="submit"]:hover{
+  background-color: hsla(224, 93%, 58%, 0.644);
+}
+.wrapper-email .validation{
+  color: red;
+  margin-top: 0.3em;
+  font-size: 0.8em;
+}
+.header-image, .about-image{
+  flex: 50%;
+}
+.header-image img, .about-image img{
+  width: 100%;
+}
+.divider{
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+}
+.custom-divider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.custom-divider img{
+  position: relative;
+  display: block;
+  height: 10vh;
+  width: 100%;
+}
+.about-section{
+  background-color:  hsl(240, 75%, 98%);
+  height: 110vh;
+}
+.about-description a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 2px solid  hsl(170, 45%, 43%);
+  width: fit-content;
+  padding-bottom: 5px;
+  gap: 0.5em;
+  color: hsl(170, 45%, 43%);
+   transition: all 0.3s ease-in-out;
+}
+.about-description a:hover{
+  color: hsla(170, 45%, 43%, 0.514);
+  border-bottom: 2px solid  hsla(170, 45%, 43%, 0.514);
+}
+.about-container .card{
+  padding: 24px;
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.356);
+}
+.card .card-text p{
+  font-size: 14px;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+.card-text .indent{
+  font-size: 32px;
+}
+.card-profile{
+  display: flex;
+  gap: 1em;
+}
+.card-profile img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.card-name p{
+  font-size: 12px;
+}
+.action-section{
+  background-color: hsl(238, 22%, 44%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+.action-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px 70px;
+}
+.action-description{
+  flex: 50%;
+}
+.action-description h2{
+  font-size: clamp(1.2rem, 2vw, 3rem);
+  margin-bottom: 1rem;
+}
+.action-description p{
+  color: hsl(240, 75%, 98%);;
+  font-size: 16px;
+}
+.action-email{
+  flex: 50%;
+  padding-left: 30px;
+}
+.action-email form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.action-container .wrapper-email input[type="email"]{
+  width: 500px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.356);
+  border: none;
+}
+.action-container .wrapper-email input[type="submit"]{
+  width: 250px;
+}
+footer{
+  background-color: hsl(243, 87%, 12%);
+}
+.footer-container{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 70px;
+  color: #fff;
+}
+.upper{
+  margin: 3rem 0em 1em;
+  color: #fff;
+}
+.lower{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.links1 ul li img{
+  margin-right: 0.8rem;
+}
+.links1 ul li, .links2 ul li, .links3 ul li{
+  list-style: none;
+  margin-bottom: 1em;
+}
+.links2 ul li a, .links3 ul li a{
+ color: #fff;
+ text-decoration: none;
+}
+.lower ul li a:hover{
+color: hsl(238, 22%, 44%);
+}
+.attribution{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

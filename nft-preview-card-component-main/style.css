@@ -1,0 +1,113 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+body{
+  background-color: hsl(217, 54%, 11%);
+  font-family: sans-serif;
+}
+.nft-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.nft-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.nft-card .image-container{
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 300px;
+  /* height: 280px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nft-card .image-container .image{
+  width: 100%;
+  border-radius: 10px;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(hsla(178, 100%, 50%, 0.116), hsla(178, 100%, 50%, 0.418));
+  transition: 0.2s ease-in;
+  opacity: 0;
+  border-radius: 10px;
+}
+.nft-card .image-container .overlay:hover{
+  opacity: 1;
+}
+.description{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.2em 0;
+}
+.description h3, .creator span{
+  color: hsl(0, 0%, 100%); 
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.description h3:hover, .creator span:hover{
+  color: hsl(178, 100%, 50%);
+}
+.description p{
+  color: hsl(215, 51%, 70%);
+  font-weight: 100;
+  font-size:  18px;
+}
+.value{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.value strong{
+  color: hsl(178, 100%, 50%);
+}
+.value strong, .value p{
+  display: flex;
+  gap: 0.5em;
+}
+.value .ethereum{
+  width: 10px;
+}
+.value .clock{
+  width: 16px;
+}
+.line{
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+.creator{
+  display: flex;
+  gap: 0.6em;
+  justify-content: start;
+  align-items: center;
+}
+.creator img{
+  width: 24px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.attribution{
+  height: 10vh;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

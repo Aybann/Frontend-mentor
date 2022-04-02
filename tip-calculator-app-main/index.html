@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="layout.css">
+  <script src="/app.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="tipCalculator-section">
+    <div class="title">
+      <h1>SPLI<br/>TTER</h1>
+    </div>
+    <div class="tipCalculator-container">
+      <div class="tipCalculator-form">
+        <form action="">
+          <div class="input-row">
+            <label for="">Bill</label>
+            <div class="input-box">
+              <span><img src="/images/icon-dollar.svg" alt="" srcset=""></span>
+              <input type="text" placeholder="0" id="bill_input">
+            </div>
+          </div>
+          <div class="input-row">
+            <label for="radioButtons">Select Tip %</label>
+            <div class="radioButtons">
+              <input type="radio" name="tips" id="five">
+              <input type="radio" name="tips" id="ten">
+              <input type="radio" name="tips" id="fifthteen">
+              <input type="radio" name="tips" id="twentyFive">
+              <input type="radio" name="tips" id="fifhty">
+              <input type="text" placeholder="Custom" id="custom">
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="labelTop">
+              <label for="">Number of People</label>
+              <p></p>
+            </div>
+            <div class="input-box">
+              <span><img src="/images/icon-person.svg" alt=""></span>
+              <input type="text" placeholder="0" id="person_input">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="display-form">
+        <div class="display-blocks">
+          <div class="display-block">
+            <div class="description">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="amount tip">$0.00</p>
+          </div>
+          <div class="display-block">
+            <div class="description">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <p class="amount total">$0.00</p>
+          </div>
+        </div>
+        <button class="resetBtn">Reset</button>
+      </div>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Aybann">Ivan Ray N. Castillo</a>.</p>
+  </div>
+</body>
+</html>

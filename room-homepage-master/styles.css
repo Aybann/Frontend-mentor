@@ -1,0 +1,150 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header-container{
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+.upper{
+  display: flex;
+  height: 65vh;
+}
+.one-part{
+  flex: 60%;
+  background-image: url(/images/desktop-image-hero-1.jpg);
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navigation{
+  position: absolute;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0px 0px 50px;
+  z-index: 2;
+  transition: 0.3s ease-in;
+  color: white;
+}
+.logo{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 2em;
+
+}
+.menuBtn{
+  display: none;
+}
+.mainNav li{
+  list-style: none;
+  display: inline;
+  padding: 0.5em;
+  cursor: pointer;
+  font-weight: 700;
+}
+.mainNav li a, .logo a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.mainNav li a{
+  transition: 0.3s ease-in-out;
+}
+.mainNav li:hover{
+  color: black;
+}
+.two-part{
+  flex: 40%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  padding: 50px;
+}
+.two-part h1{
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+.two-part p{
+  color: hsl(0, 0%, 63%);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.two-part button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.two-part button img{
+  margin-left: 1em;
+}
+.two-part button:hover{
+  color: hsl(0, 0%, 63%);
+}
+.arrow-buttons2{
+  display: none;
+  background-color: hsl(0, 0%, 0%);
+  cursor: pointer;
+}
+.arrow-buttons{
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.left-arrow, .right-arrow{
+  padding: 18px 30px;
+}
+.left-arrow:hover, .right-arrow:hover{
+  background-color: hsl(0, 0%, 27%);
+}
+.lower{
+  display: grid;
+  grid-template-columns: 30vw 40vw 30vw;
+  grid-template-rows: 1;
+  height: 35vh;
+}
+.three-part{
+  background-image: url(/images/image-about-dark.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.four-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.four-part .content{
+  padding: 0 50px;
+}
+.four-part h2{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0.5em;
+}
+.four-part p{
+  color: hsl(0, 0%, 63%);
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.five-part{
+  background-image: url(/images/image-about-light.jpg);
+  background-position: center;
+  background-size: cover;
+}

@@ -1,0 +1,20 @@
+@media (max-width: 768px){
+  .tipCalculator-container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .tipCalculator-section{
+    margin-top: 40px;
+  }
+  form,.display-form,  .tipCalculator-section{
+    height: auto;
+    width: 100%;
+  }
+  .radioButtons{
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 0.7em; */
+  }
+  .labelTop p{
+    font-size: 12px;
+  }
+}
